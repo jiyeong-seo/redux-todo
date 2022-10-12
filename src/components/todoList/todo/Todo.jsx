@@ -1,27 +1,18 @@
-import { useSelector, useDispatch } from "react-redux";
+import { useDispatch } from "react-redux";
 import { deleteTodo, doneTodo } from "../../../redux/modules/todos";
 import { useNavigate } from "react-router-dom";
 import { Heading, Box, Button, Flex, P } from "../../../common";
 
 const Todo = ({ todo }) => {
-  const todos = useSelector((state) => state.todos);
   const dispatch = useDispatch();
   const navigate = useNavigate();
 
-  // 삭제 핸들러
   const handleDeleteTodo = () => {
-    dispatch(deleteTodo(todos.filter((item) => item.id !== todo.id)));
+    dispatch(deleteTodo(todo.id));
   };
 
-  // 완료 핸들러
   const handelIsDoneCheckTodo = () => {
-    dispatch(
-      doneTodo(
-        todos.map((item) =>
-          item.id === todo.id ? { ...item, isDone: !item.isDone } : item
-        )
-      )
-    );
+    dispatch(doneTodo(todo.id));
   };
 
   return (

@@ -4,7 +4,7 @@ import { Heading, Box } from "../../../common";
 
 const List = () => {
   const todos = useSelector((state) => state.todos);
-  console.log(todos.filter((item) => item.isDone));
+
   return (
     <>
       <Box dp="grid" gtc="1fr 1fr">

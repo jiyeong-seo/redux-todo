@@ -1,3 +1,3 @@
-import { Todo, List, Form } from "./todoList";
+import { Todo, List, TodoForm } from "./todoList";
 
-export { Form, List, Todo };
+export { TodoForm, List, Todo };

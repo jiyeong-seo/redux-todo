@@ -8,5 +8,18 @@ import { default as Label } from "./label";
 import { default as Button } from "./button";
 import { default as Heading } from "./heading";
 import { default as P } from "./p";
+import { default as Form } from "./form";
 
-export { Layout, Header, Modal, Box, Flex, Input, Label, Button, Heading, P };
+export {
+  Layout,
+  Header,
+  Modal,
+  Box,
+  Flex,
+  Input,
+  Label,
+  Button,
+  Heading,
+  P,
+  Form,
+};

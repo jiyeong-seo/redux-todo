@@ -2,7 +2,6 @@
 const ADD_TODO = "ADD_TODO";
 const DELETE_TODO = "DELETE_TODO";
 const DONE_TODO = "DONE_TODO";
-const WORK_TODO = "WORK_TODO";
 
 // Action Counter
 export const addTodo = (payload) => {
@@ -26,11 +25,17 @@ const todos = (state = initialState, action) => {
     case ADD_TODO:
       return [...state, action.payload];
     case DELETE_TODO:
-      return [...action.payload];
+      const deleteTodos = [
+        ...state.filter((item) => item.id !== action.payload),
+      ];
+      return deleteTodos;
     case DONE_TODO:
-      return [...action.payload];
-    case WORK_TODO:
-      return [...action.payload];
+      const todos = [
+        ...state.map((item) =>
+          item.id === action.payload ? { ...item, isDone: !item.isDone } : item
+        ),
+      ];
+      return todos;
     default:
       return state;
   }

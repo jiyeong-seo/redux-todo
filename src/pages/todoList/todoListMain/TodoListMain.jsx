@@ -1,9 +1,14 @@
 import * as styles from "./TodoList.styles";
-import { Form, List } from "../../../components";
+import { useEffect } from "react";
+import { TodoForm, List } from "../../../components";
 import { Layout, Header, Flex, Box, Heading } from "../../../common";
 import { Typing, Blink } from "../../../common/animation";
 
 const TodoListMain = () => {
+  useEffect(() => {
+    console.log("useEffect!!");
+  });
+
   return (
     <styles.TodoListMain>
       <Layout>
@@ -35,7 +40,7 @@ const TodoListMain = () => {
             bs="1px 10px 7px 7px rgba(113, 113, 113, 0.3)"
             tf="translateY(-0.5%)"
           >
-            <Form />
+            <TodoForm />
             <List />
           </Box>
         </Flex>
