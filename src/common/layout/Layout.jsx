@@ -1,7 +1,7 @@
 import * as styles from "./Layout.styles";
 
-const Layout = ({ children }) => {
-  return <styles.Layout>{children}</styles.Layout>;
+const Layout = ({ children, ...props }) => {
+  return <styles.Layout {...props}>{children}</styles.Layout>;
 };
 
 export default Layout;
