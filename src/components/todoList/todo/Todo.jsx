@@ -1,19 +1,10 @@
-import { useDispatch } from "react-redux";
-import { deleteTodo, doneTodo } from "../../../redux/modules/todos";
-import { useNavigate } from "react-router-dom";
 import { Heading, Box, Button, Flex, P } from "../../../common";
+import { useChangeTodo } from "../hooks";
 
 const Todo = ({ todo }) => {
-  const dispatch = useDispatch();
-  const navigate = useNavigate();
-
-  const handleDeleteTodo = () => {
-    dispatch(deleteTodo(todo.id));
-  };
-
-  const handelIsDoneCheckTodo = () => {
-    dispatch(doneTodo(todo.id));
-  };
+  const { navigate, handleDeleteTodo, handelIsDoneCheckTodo } = useChangeTodo(
+    todo.id
+  );
 
   return (
     <Box
@@ -46,6 +37,7 @@ const Todo = ({ todo }) => {
             pd="10px 18"
             bc="transParent"
             mg="10"
+            aria-label="delete button"
           ></Button>
           <Button
             onClick={handelIsDoneCheckTodo}
@@ -56,6 +48,7 @@ const Todo = ({ todo }) => {
             pd="10px 18"
             bc="transParent"
             mg="10"
+            aria-label="cancel button"
           ></Button>
           <Button
             bgimg="/images/detail.png"
@@ -66,6 +59,7 @@ const Todo = ({ todo }) => {
             bc="transParent"
             mg="10"
             onClick={() => navigate(`/detail/${todo.id}`)}
+            aria-label="detail button"
           ></Button>
         </Box>
       </Flex>
