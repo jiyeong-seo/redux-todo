@@ -1,6 +1,6 @@
 컴포넌트는 자유롭게 나누되, 그렇게 나눈 사유에 대하여 README에 작성하세요.
 
-![header](https://capsule-render.vercel.app/api?type=waving&color=9ecefc&text=%20To do%20%20&height=200&fontSize=50&fontColor=5d5d5d)
+![header](https://capsule-render.vercel.app/api?type=waving&color=9ecefc&text=%20Todo%20%20&height=200&fontSize=50&fontColor=5d5d5d)
 # My Todo List
 
 ## 강아지들을 위한 견주들의 수제 간식 공유 사이트
