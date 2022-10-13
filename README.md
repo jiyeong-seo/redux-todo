@@ -1,52 +1,28 @@
 컴포넌트는 자유롭게 나누되, 그렇게 나눈 사유에 대하여 README에 작성하세요.
 
-![header](https://capsule-render.vercel.app/api?type=waving&color=9ecefc&text=%20Todo%20%20&height=200&fontSize=50&fontColor=5d5d5d)
+![header](https://capsule-render.vercel.app/api?type=waving&color=FAED7D&text=%20Todo%20%20&height=200&fontSize=50&fontColor=5d5d5d)
 # My Todo List
 
-## 강아지들을 위한 견주들의 수제 간식 공유 사이트
+# 주소: [My Todo List](https://redux-todo-teal-seven.vercel.app/)
 
-### 주소: [http://bugbear.shop/](http://bugbear.shop/)
+# 1. 폴더 구조
+### 상위 폴더 구조
+<img width="212" alt="스크린샷 2022-10-13 오후 7 06 49" src="https://user-images.githubusercontent.com/92812508/195570956-032c16cc-374c-448a-aaa0-811cfa07045d.png">
 
-## 1. 제작 기간
+### common 하위 폴더 구조
+<img width="288" alt="스크린샷 2022-10-13 오후 7 08 04" src="https://user-images.githubusercontent.com/92812508/195571189-b53a1ae3-da52-4e9f-8bf4-94e69f5ad610.png">
 
-2022년 9월 19일 ~ 2022년 9월 22일
+### components 하위 폴더 구조
+<img width="323" alt="스크린샷 2022-10-13 오후 7 08 46" src="https://user-images.githubusercontent.com/92812508/195575437-02edee31-075e-4a0d-a8c5-8bea1c88d024.png">
 
-## 2. 팀원 소개
+### pages 하위 폴더 구조
+<img width="325" alt="스크린샷 2022-10-13 오후 7 09 02" src="https://user-images.githubusercontent.com/92812508/195575532-1a11234c-59e5-4074-ae23-a45c941c3c83.png">
 
-### 3인 1조 팀 프로젝트
+### redux / shared(Router) 하위 폴더 구조
+<img width="325" alt="스크린샷 2022-10-13 오후 7 10 36" src="https://user-images.githubusercontent.com/92812508/195575769-801b72c0-45b9-4b84-9dd0-da392a2d1e49.png">
 
-- 강희인 : like 기능, like 한 사용자 추적 기능
-- 김연태 : 페이저 구현, 포스팅 기능
-- 서지영 : 댓글 기능, UI 디자인 구성, 와이어 프레임 설계
-- 공통 : 회원가입, 로그인, 로그아웃 기능
 
-## 2. 사용 기술
-
-### ***Back-end***
-
-- Python 3.8
-- Flask 2.2.2
-
-### ***Front-end***
-
-- JQuery 3.4.1
-- Bulma 0.9.1
-
-### ***Server***
-
-- AWS EC2 (Linux Ubuntu 18.04 LTS)
-
-### ***DataBase***
-
-- MongoDB Cloud 5.0.12
-
-## 3. 시연 연상
-
-<img width="847" alt="image" src="https://user-images.githubusercontent.com/92812508/191704731-5a9e1159-8f0f-48ff-9c57-f708a8a34c62.png">
-
-### [멍슐랭 유튜브](https://www.youtube.com/watch?v=maTpFkykw80)
-
-## 4. 핵심기능
+## 2. 핵심기능
 
 1. **JWT를 이용한 로그인과 회원 가입 구현**
 
@@ -60,10 +36,4 @@
 
 6. **파일 저장 중복 방지와 보안 유지를 위한 랜덤 값 이름 부여 기능**
 
-## 5. 팀원 주소
-
-- 김연태 : [https://brajjam.tistory.com/](https://brajjam.tistory.com/)
-- 강희인 : [https://github.com/Online-abayss](https://github.com/Online-abayss)
-- 서지영 : [https://github.com/jiyeong-seo](https://github.com/jiyeong-seo)
-
-![Footer](https://capsule-render.vercel.app/api?type=waving&color=9ecefc&height=200&fontSize=50&fontColor=5d5d5d&section=footer)
+![Footer](https://capsule-render.vercel.app/api?type=waving&color=FAED7D&height=200&fontSize=50&fontColor=5d5d5d&section=footer)
