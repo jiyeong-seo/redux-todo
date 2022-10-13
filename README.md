@@ -4,7 +4,7 @@
 # 주소: [My Todo List](https://redux-todo-teal-seven.vercel.app/)
 
 # 1. 폴더 구조
-### 상위 폴더 구조
+### 📁 상위 폴더 구조
 <img width="212" alt="스크린샷 2022-10-13 오후 7 06 49" src="https://user-images.githubusercontent.com/92812508/195570956-032c16cc-374c-448a-aaa0-811cfa07045d.png">
 
 ### 📁 common 하위 폴더 구조
