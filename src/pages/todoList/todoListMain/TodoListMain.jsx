@@ -8,9 +8,10 @@ const TodoListMain = () => {
   useEffect(() => {
     console.log("useEffect!!");
   });
+  console.log("렌더링");
 
   return (
-    <styles.TodoListMain>
+    <styles.TodoListMain bgimg={process.env.PUBLIC_URL + "/images/sky.png"}>
       <Layout>
         <Flex fd="column" jc="center" ai="center" height="100vh">
           <Header>
