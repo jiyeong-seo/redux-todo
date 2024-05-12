@@ -1,5 +1,7 @@
-![header](https://capsule-render.vercel.app/api?type=waving&color=FAED7D&text=%20Todo%20%20&height=220&fontSize=50&fontColor=5d5d5d)
+![header](https://capsule-render.vercel.app/api?type=waving&color=FAED7D&text=%20TodoList%20%20&height=220&fontSize=50&fontColor=5d5d5d)
 # 🗓 My Todo List 🗓
+
+<a href="https://ibb.co/jhXhxjH"><img src="https://i.ibb.co/b191yG7/2024-05-12-10-11-12.png" alt="2024-05-12-10-11-12" border="0" /></a>
 
 # 주소: [My Todo List](https://redux-todo-teal-seven.vercel.app/)
 
